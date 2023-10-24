@@ -21,7 +21,7 @@ function App() {
                 <StudentSummary/>     
                 <StudentForm/> 
                 <StudentsList />       
-                <Banner x= {23} y= {14} lname = "Saamuel" age = {35}/>               
+                {/* <Banner x= {23} y= {14} lname = "Saamuel" age = {35}/>                */}
                 </>
 
             } />

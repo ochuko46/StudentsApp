@@ -5,6 +5,7 @@ function RatingSelector({theRating}) {
 
     const selectHandler = (e)=> {
         setSelected(Number(e.target.value))
+        theRating(Number(e.target.value))
         // console.log(e.target.value);
     }
     return <div>

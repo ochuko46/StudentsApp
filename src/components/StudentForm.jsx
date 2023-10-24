@@ -25,7 +25,7 @@ function StudentForm() {
             setValMessage(null)
         }
         setText(e.target.value);
-    
+        
     } 
 
     const studentFormhandler = (e) => {
@@ -43,7 +43,9 @@ function StudentForm() {
         <Card>
         <form onSubmit={studentFormhandler} >
             <h2>Enter Student with Rating</h2>
-            <RatingSelector theRating ={(f)=> setClassRating(f)}/>
+            <RatingSelector theRating ={(f)=> {
+                setClassRating(f)
+                }}/>
             <div className="input-group">
                 <input onChange={textHandler} type="text" value={text} placeholder="Enter your content" />                
                 <MainButton isDisabled={isDisabled} >Add Task</MainButton>
